@@ -29,6 +29,6 @@ class HerokuConnection
 
     return dns_target
   rescue => e
-    render json: { error: e.message }, status: :internal_server_error
+    return { error: e.message }
   end
 end
