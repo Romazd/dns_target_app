@@ -24,6 +24,7 @@ class HerokuConnection
     else
       body = response.body
     end
+    Rails.logger.info("Response: #{response.code} #{response.message} - #{response.body}")
     dns_targets = JSON.parse(body)
     dns_target = dns_targets.first['hostname'] # Simplified; you might need to adjust based on actual response
 
