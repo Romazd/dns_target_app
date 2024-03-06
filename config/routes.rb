@@ -8,4 +8,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "posts#index"
+
+  get "api_connection" => "api_connection#new", as: :api_connection
 end
