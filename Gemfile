@@ -36,6 +36,8 @@ gem "haml-rails", "~> 2.0"
 
 gem "pry-rails", "~> 0.3.9"
 
+gem "platform-api", "~> 3.0"
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
